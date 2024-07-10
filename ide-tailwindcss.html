@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(document).ready(function(){
+        $('#btnclr1').click(function(){
+          $('.clear1').val('');
+        });
+      });
+      $(document).ready(function(){
+        $('#btnclr2').click(function(){
+          $('.clear2').val('');
+        });
+      });
+      $(document).ready(function(){
+        $('#btnclr3').click(function(){
+          $('.clear3').val('');
+        });
+      });
+
+      $(document).ready(function(){
+        $('#but1').click(function(){
+          $('.textcopy1').select();
+          document.execCommand('copy');
+        });
+      });
+
+
+      $(document).ready(function(){
+        $('#but2').click(function(){
+          $('.textcopy2').select();
+          document.execCommand('copy');
+        });
+      });
+
+      $(document).ready(function(){
+        $('#but3').click(function(){
+          $('.textcopy3').select();
+          document.execCommand('copy');
+        });
+      });
+
+    </script>
+ 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--fontawesome cdn-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--style link css-->
+    <link rel="stylesheet" href="ide.css">
+    <link rel="icon" href="icon.svg">
+    <title>CodePlatform IDE | Code</title>
+
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light nav__color">
+      <div class="container-fluid">
+        <img src="icon.svg" alt="" width="30" height="24"> &nbsp;
+        <a class="navbar-brand" href="ide.html">CodePlatform IDE </a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto item__config">
+            <li class="nav-item">
+              <div class="dropdown drop__pad">
+                <button class="btn btn-outline-light dropdown-toggle btn-sm" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-file-import"></i> Import Framework
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <a href="ide-bootstrap.html"><button class="dropdown-item" type="button">Bootstrap</button></a> 
+                  <button class="dropdown-item" type="button"></button>
+                  <button class="dropdown-item" type="button">TailwindCSS</button>
+                </div>
+              </div>
+            </li> 
+            
+            <li class="nav-item item__config">
+             <!-- <a href="https://cdnjs.com/" target="_blank"><button type="button" class="btn btn-outline-light btn-sm drop__pad"><i class="fas fa-external-link-alt"></i> CDNjs</button></a>  -->
+            </li>
+            <li class="nav-item item__config">
+              <!-- <a href="https://cdnjs.com/" target="_blank"><button type="button" class="btn btn-outline-light btn-sm drop__pad"><i class="fas fa-book"></i></button></a>  -->
+             </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!--code editors html, css, js-->
+      <iframe id="testArea4" height="60%" width="100%" id="ifames" class="iframe__custom embed-responsive-item white__iframe" srcdoc=" 
+      <b> Your output will be displayed here.🔥🔥🔥</b> <br>
+      Happy coding, geek! ❤️
+      "></iframe>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-sm-12 code__header">
+      <div class="code__header">
+      <p><span><i class="fab fa-html5 ico__pad"></i> HTML
+        <i class="fas fa-eraser float-end ico__pad ico__pad_btn" id="btnclr1" data-bs-toggle="tooltip" data-bs-placement="top" title="Clear All"></i>
+
+        <i class="far fa-copy ico__pad float-end ico__pad_btn" id="but1" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy All"></i>
+        <a href="#/" target="_blank" id="testLink"><i class="fas fa-download ico__pad float-end ico__pad_btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Download HTML"></i></a></span></p>
+    </div>
+      <textarea id="testArea" class="text__area clear1 myBox textcopy1">
+        <!doctype html>
+        <html>
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link href="/path/to/tailwind.css" rel="stylesheet">
+          <!-- ... -->
+        </head>
+        <body>
+          <!-- ... -->
+        </body>
+        </html>
+      </textarea>
+    </div>
+    <div class="col-md-4 col-sm-12 code__header">
+      <div class="code__header">
+        <p><span><i class="fab fa-css3 ico__pad"></i> CSS
+        <i class="fas fa-eraser float-end ico__pad ico__pad_btn" id="btnclr2" data-bs-toggle="tooltip" data-bs-placement="top" title="Clear All"></i>
+        <i class="far fa-copy ico__pad float-end ico__pad_btn" id="but2" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy All"></i>
+        <a href="#/" target="_blank" id="testLink1"><i class="fas fa-download ico__pad float-end ico__pad_btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Download CSS"></i></a></span> </p>
+      </div>
+      <textarea id="testArea1" class="text__area clear2 myBox textcopy2"></textarea>
+    </div>
+    <div class="col-md-4 col-sm-12 code__header">
+      <div class="code__header">
+      <p><span><i class="fab fa-js ico__pad"></i> JavaScript
+      <i class="fas fa-eraser float-end ico__pad ico__pad_btn" id="btnclr3" data-bs-toggle="tooltip" data-bs-placement="top" title="Clear All"></i>
+      <i class="far fa-copy ico__pad float-end ico__pad_btn" id="but3" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy All"></i>
+      <a href="#/" target="_blank" id="testLink2"><i class="fas fa-download ico__pad float-end ico__pad_btn"data-bs-toggle="tooltip" data-bs-placement="top" title="Download JavaScript"></i></a></span> </p>
+      </div>
+      <textarea id="testArea2" class="text__area clear3 myBox textcopy3"></textarea>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+(function() {
+    var saveAs=saveAs ||(typeof navigator!=="undefined"&&navigator.msSaveOrOpenBlob&&navigator.msSaveOrOpenBlob.bind(navigator))||(function(view){"use strict";if(typeof navigator!=="undefined"&&/MSIE [1-9]\./.test(navigator.userAgent)){return}var doc=view.document,get_URL=function(){return view.URL||view.webkitURL||view},save_link=doc.createElementNS("http://www.w3.org/1999/xhtml","a"),can_use_save_link=!view.externalHost&&"download"in save_link,click=function(node){var event=doc.createEvent("MouseEvents");event.initMouseEvent("click",true,false,view,0,0,0,0,0,false,false,false,false,0,null);node.dispatchEvent(event)},webkit_req_fs=view.webkitRequestFileSystem,req_fs=view.requestFileSystem||webkit_req_fs||view.mozRequestFileSystem,throw_outside=function(ex){(view.setImmediate||view.setTimeout)(function(){throw ex},0)},force_saveable_type="application/octet-stream",fs_min_size=0,deletion_queue=[],process_deletion_queue=function(){var i=deletion_queue.length;while(i--){var file=deletion_queue[i];if(typeof file==="string"){get_URL().revokeObjectURL(file)}else{file.remove()}}deletion_queue.length=0;},dispatch=function(filesaver,event_types,event){event_types=[].concat(event_types);var i=event_types.length;while(i--){var listener=filesaver["on"+event_types[i]];if(typeof listener==="function"){try{listener.call(filesaver,event||filesaver)}catch(ex){throw_outside(ex)}}}},FileSaver=function(blob,name){var filesaver=this,type=blob.type,blob_changed=false,object_url,target_view,get_object_url=function(){var object_url=get_URL().createObjectURL(blob);deletion_queue.push(object_url);return object_url},dispatch_all=function(){dispatch(filesaver,"writestart progress write writeend".split(" "))},fs_error=function(){if(blob_changed||!object_url){object_url=get_object_url(blob)}if(target_view){target_view.location.href=object_url}else{window.open(object_url,"_blank")}filesaver.readyState=filesaver.DONE;dispatch_all()},abortable=function(func){return function(){if(filesaver.readyState!==filesaver.DONE){return func.apply(this,arguments)}}},create_if_not_found={create:true,exclusive:false},slice;filesaver.readyState=filesaver.INIT;if(!name){name="download"}if(can_use_save_link){object_url=get_object_url(blob);save_link.href=object_url;save_link.download=name;click(save_link);filesaver.readyState=filesaver.DONE;dispatch_all();return}if(view.chrome&&type&&type!==force_saveable_type){slice=blob.slice||blob.webkitSlice;blob=slice.call(blob,0,blob.size,force_saveable_type);blob_changed=true}if(webkit_req_fs&&name!=="download"){name+=".download"}if(type===force_saveable_type||webkit_req_fs){target_view=view}if(!req_fs){fs_error();return}fs_min_size+=blob.size;req_fs(view.TEMPORARY,fs_min_size,abortable(function(fs){fs.root.getDirectory("saved",create_if_not_found,abortable(function(dir){var save=function(){dir.getFile(name,create_if_not_found,abortable(function(file){file.createWriter(abortable(function(writer){writer.onwriteend=function(event){target_view.location.href=file.toURL();deletion_queue.push(file);filesaver.readyState=filesaver.DONE;dispatch(filesaver,"writeend",event)};writer.onerror=function(){var error=writer.error;if(error.code!==error.ABORT_ERR){fs_error()}};"writestart progress write abort".split(" ").forEach(function(event){writer["on"+event]=filesaver["on"+event]});writer.write(blob);filesaver.abort=function(){writer.abort();filesaver.readyState=filesaver.DONE};filesaver.readyState=filesaver.WRITING}),fs_error)}),fs_error)};dir.getFile(name,{create:false},abortable(function(file){file.remove();save()}),abortable(function(ex){if(ex.code===ex.NOT_FOUND_ERR){save()}else{fs_error()}}))}),fs_error)}),fs_error)},FS_proto=FileSaver.prototype,saveAs=function(blob,name){return new FileSaver(blob,name)};FS_proto.abort=function(){var filesaver=this;filesaver.readyState=filesaver.DONE;dispatch(filesaver,"abort")};FS_proto.readyState=FS_proto.INIT=0;FS_proto.WRITING=1;FS_proto.DONE=2;FS_proto.error=FS_proto.onwritestart=FS_proto.onprogress=FS_proto.onwrite=FS_proto.onabort=FS_proto.onerror=FS_proto.onwriteend=null;view.addEventListener("unload",process_deletion_queue,false);saveAs.unload=function(){process_deletion_queue();view.removeEventListener("unload",process_deletion_queue,false)};return saveAs}(typeof self!=="undefined"&&self||typeof window!=="undefined"&&window||this.content));if(typeof module!=="undefined"&&module!==null){module.exports=saveAs}else if((typeof define!=="undefined"&&define!==null)&&(define.amd!=null)){define([],function(){return saveAs})}String.prototype.endsWithAny=function(){var strArray=Array.prototype.slice.call(arguments),$this=this.toLowerCase().toString();for(var i=0;i<strArray.length;i+=1){if($this.indexOf(strArray[i],$this.length-strArray[i].length)!==-1){return true}}return false};var saveTextAs=saveTextAs||(function(textContent,fileName,charset){fileName=fileName||'download.txt';charset=charset||'utf-8';textContent=(textContent||'').replace(/\r?\n/g,"\r\n");if(saveAs&&Blob){var blob=new Blob([textContent],{type:"text/plain;charset="+charset});saveAs(blob,fileName);return true}else{var saveTxtWindow=window.frames.saveTxtWindow;if(!saveTxtWindow){saveTxtWindow=document.createElement('iframe');saveTxtWindow.id='saveTxtWindow';saveTxtWindow.style.display='none';document.body.insertBefore(saveTxtWindow,null);saveTxtWindow=window.frames.saveTxtWindow;if(!saveTxtWindow){saveTxtWindow=window.open('','_temp','width=100,height=100');if(!saveTxtWindow){window.alert('Sorry, download file could not be created.');return false}}}var doc=saveTxtWindow.document;doc.open('text/html','replace');doc.charset=charset;if(fileName.endsWithAny('.htm','.html')){doc.close();doc.body.innerHTML='\r\n'+textContent+'\r\n'}else{if(!fileName.endsWithAny('.txt')){fileName+='.txt'}doc.write(textContent);doc.close()}var retValue=doc.execCommand('SaveAs',null,fileName);saveTxtWindow.close();return retValue}});
+
+    /*----*/
+    var area = document.getElementById('testArea1');
+    var link = document.getElementById('testLink1');
+
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        saveTextAs(area.value, 'style.css');
+    }, false);
+})();
+
+
+</script>
+
+<script>
+  (function() {
+      var saveAs=saveAs ||(typeof navigator!=="undefined"&&navigator.msSaveOrOpenBlob&&navigator.msSaveOrOpenBlob.bind(navigator))||(function(view){"use strict";if(typeof navigator!=="undefined"&&/MSIE [1-9]\./.test(navigator.userAgent)){return}var doc=view.document,get_URL=function(){return view.URL||view.webkitURL||view},save_link=doc.createElementNS("http://www.w3.org/1999/xhtml","a"),can_use_save_link=!view.externalHost&&"download"in save_link,click=function(node){var event=doc.createEvent("MouseEvents");event.initMouseEvent("click",true,false,view,0,0,0,0,0,false,false,false,false,0,null);node.dispatchEvent(event)},webkit_req_fs=view.webkitRequestFileSystem,req_fs=view.requestFileSystem||webkit_req_fs||view.mozRequestFileSystem,throw_outside=function(ex){(view.setImmediate||view.setTimeout)(function(){throw ex},0)},force_saveable_type="application/octet-stream",fs_min_size=0,deletion_queue=[],process_deletion_queue=function(){var i=deletion_queue.length;while(i--){var file=deletion_queue[i];if(typeof file==="string"){get_URL().revokeObjectURL(file)}else{file.remove()}}deletion_queue.length=0;},dispatch=function(filesaver,event_types,event){event_types=[].concat(event_types);var i=event_types.length;while(i--){var listener=filesaver["on"+event_types[i]];if(typeof listener==="function"){try{listener.call(filesaver,event||filesaver)}catch(ex){throw_outside(ex)}}}},FileSaver=function(blob,name){var filesaver=this,type=blob.type,blob_changed=false,object_url,target_view,get_object_url=function(){var object_url=get_URL().createObjectURL(blob);deletion_queue.push(object_url);return object_url},dispatch_all=function(){dispatch(filesaver,"writestart progress write writeend".split(" "))},fs_error=function(){if(blob_changed||!object_url){object_url=get_object_url(blob)}if(target_view){target_view.location.href=object_url}else{window.open(object_url,"_blank")}filesaver.readyState=filesaver.DONE;dispatch_all()},abortable=function(func){return function(){if(filesaver.readyState!==filesaver.DONE){return func.apply(this,arguments)}}},create_if_not_found={create:true,exclusive:false},slice;filesaver.readyState=filesaver.INIT;if(!name){name="download"}if(can_use_save_link){object_url=get_object_url(blob);save_link.href=object_url;save_link.download=name;click(save_link);filesaver.readyState=filesaver.DONE;dispatch_all();return}if(view.chrome&&type&&type!==force_saveable_type){slice=blob.slice||blob.webkitSlice;blob=slice.call(blob,0,blob.size,force_saveable_type);blob_changed=true}if(webkit_req_fs&&name!=="download"){name+=".download"}if(type===force_saveable_type||webkit_req_fs){target_view=view}if(!req_fs){fs_error();return}fs_min_size+=blob.size;req_fs(view.TEMPORARY,fs_min_size,abortable(function(fs){fs.root.getDirectory("saved",create_if_not_found,abortable(function(dir){var save=function(){dir.getFile(name,create_if_not_found,abortable(function(file){file.createWriter(abortable(function(writer){writer.onwriteend=function(event){target_view.location.href=file.toURL();deletion_queue.push(file);filesaver.readyState=filesaver.DONE;dispatch(filesaver,"writeend",event)};writer.onerror=function(){var error=writer.error;if(error.code!==error.ABORT_ERR){fs_error()}};"writestart progress write abort".split(" ").forEach(function(event){writer["on"+event]=filesaver["on"+event]});writer.write(blob);filesaver.abort=function(){writer.abort();filesaver.readyState=filesaver.DONE};filesaver.readyState=filesaver.WRITING}),fs_error)}),fs_error)};dir.getFile(name,{create:false},abortable(function(file){file.remove();save()}),abortable(function(ex){if(ex.code===ex.NOT_FOUND_ERR){save()}else{fs_error()}}))}),fs_error)}),fs_error)},FS_proto=FileSaver.prototype,saveAs=function(blob,name){return new FileSaver(blob,name)};FS_proto.abort=function(){var filesaver=this;filesaver.readyState=filesaver.DONE;dispatch(filesaver,"abort")};FS_proto.readyState=FS_proto.INIT=0;FS_proto.WRITING=1;FS_proto.DONE=2;FS_proto.error=FS_proto.onwritestart=FS_proto.onprogress=FS_proto.onwrite=FS_proto.onabort=FS_proto.onerror=FS_proto.onwriteend=null;view.addEventListener("unload",process_deletion_queue,false);saveAs.unload=function(){process_deletion_queue();view.removeEventListener("unload",process_deletion_queue,false)};return saveAs}(typeof self!=="undefined"&&self||typeof window!=="undefined"&&window||this.content));if(typeof module!=="undefined"&&module!==null){module.exports=saveAs}else if((typeof define!=="undefined"&&define!==null)&&(define.amd!=null)){define([],function(){return saveAs})}String.prototype.endsWithAny=function(){var strArray=Array.prototype.slice.call(arguments),$this=this.toLowerCase().toString();for(var i=0;i<strArray.length;i+=1){if($this.indexOf(strArray[i],$this.length-strArray[i].length)!==-1){return true}}return false};var saveTextAs=saveTextAs||(function(textContent,fileName,charset){fileName=fileName||'download.txt';charset=charset||'utf-8';textContent=(textContent||'').replace(/\r?\n/g,"\r\n");if(saveAs&&Blob){var blob=new Blob([textContent],{type:"text/plain;charset="+charset});saveAs(blob,fileName);return true}else{var saveTxtWindow=window.frames.saveTxtWindow;if(!saveTxtWindow){saveTxtWindow=document.createElement('iframe');saveTxtWindow.id='saveTxtWindow';saveTxtWindow.style.display='none';document.body.insertBefore(saveTxtWindow,null);saveTxtWindow=window.frames.saveTxtWindow;if(!saveTxtWindow){saveTxtWindow=window.open('','_temp','width=100,height=100');if(!saveTxtWindow){window.alert('Sorry, download file could not be created.');return false}}}var doc=saveTxtWindow.document;doc.open('text/html','replace');doc.charset=charset;if(fileName.endsWithAny('.htm','.html')){doc.close();doc.body.innerHTML='\r\n'+textContent+'\r\n'}else{if(!fileName.endsWithAny('.txt')){fileName+='.txt'}doc.write(textContent);doc.close()}var retValue=doc.execCommand('SaveAs',null,fileName);saveTxtWindow.close();return retValue}});
+  
+      /*----*/
+      var area = document.getElementById('testArea2');
+      var link = document.getElementById('testLink2');
+  
+      link.addEventListener('click', function(e) {
+          e.preventDefault();
+          saveTextAs(area.value, 'app.js');
+      }, false);
+  })();
+  
+  
+  </script>
+
+  
+  
+  </script>
+
+    <script>
+
+(function() {
+    var saveAs=saveAs ||(typeof navigator!=="undefined"&&navigator.msSaveOrOpenBlob&&navigator.msSaveOrOpenBlob.bind(navigator))||(function(view){"use strict";if(typeof navigator!=="undefined"&&/MSIE [1-9]\./.test(navigator.userAgent)){return}var doc=view.document,get_URL=function(){return view.URL||view.webkitURL||view},save_link=doc.createElementNS("http://www.w3.org/1999/xhtml","a"),can_use_save_link=!view.externalHost&&"download"in save_link,click=function(node){var event=doc.createEvent("MouseEvents");event.initMouseEvent("click",true,false,view,0,0,0,0,0,false,false,false,false,0,null);node.dispatchEvent(event)},webkit_req_fs=view.webkitRequestFileSystem,req_fs=view.requestFileSystem||webkit_req_fs||view.mozRequestFileSystem,throw_outside=function(ex){(view.setImmediate||view.setTimeout)(function(){throw ex},0)},force_saveable_type="application/octet-stream",fs_min_size=0,deletion_queue=[],process_deletion_queue=function(){var i=deletion_queue.length;while(i--){var file=deletion_queue[i];if(typeof file==="string"){get_URL().revokeObjectURL(file)}else{file.remove()}}deletion_queue.length=0;},dispatch=function(filesaver,event_types,event){event_types=[].concat(event_types);var i=event_types.length;while(i--){var listener=filesaver["on"+event_types[i]];if(typeof listener==="function"){try{listener.call(filesaver,event||filesaver)}catch(ex){throw_outside(ex)}}}},FileSaver=function(blob,name){var filesaver=this,type=blob.type,blob_changed=false,object_url,target_view,get_object_url=function(){var object_url=get_URL().createObjectURL(blob);deletion_queue.push(object_url);return object_url},dispatch_all=function(){dispatch(filesaver,"writestart progress write writeend".split(" "))},fs_error=function(){if(blob_changed||!object_url){object_url=get_object_url(blob)}if(target_view){target_view.location.href=object_url}else{window.open(object_url,"_blank")}filesaver.readyState=filesaver.DONE;dispatch_all()},abortable=function(func){return function(){if(filesaver.readyState!==filesaver.DONE){return func.apply(this,arguments)}}},create_if_not_found={create:true,exclusive:false},slice;filesaver.readyState=filesaver.INIT;if(!name){name="download"}if(can_use_save_link){object_url=get_object_url(blob);save_link.href=object_url;save_link.download=name;click(save_link);filesaver.readyState=filesaver.DONE;dispatch_all();return}if(view.chrome&&type&&type!==force_saveable_type){slice=blob.slice||blob.webkitSlice;blob=slice.call(blob,0,blob.size,force_saveable_type);blob_changed=true}if(webkit_req_fs&&name!=="download"){name+=".download"}if(type===force_saveable_type||webkit_req_fs){target_view=view}if(!req_fs){fs_error();return}fs_min_size+=blob.size;req_fs(view.TEMPORARY,fs_min_size,abortable(function(fs){fs.root.getDirectory("saved",create_if_not_found,abortable(function(dir){var save=function(){dir.getFile(name,create_if_not_found,abortable(function(file){file.createWriter(abortable(function(writer){writer.onwriteend=function(event){target_view.location.href=file.toURL();deletion_queue.push(file);filesaver.readyState=filesaver.DONE;dispatch(filesaver,"writeend",event)};writer.onerror=function(){var error=writer.error;if(error.code!==error.ABORT_ERR){fs_error()}};"writestart progress write abort".split(" ").forEach(function(event){writer["on"+event]=filesaver["on"+event]});writer.write(blob);filesaver.abort=function(){writer.abort();filesaver.readyState=filesaver.DONE};filesaver.readyState=filesaver.WRITING}),fs_error)}),fs_error)};dir.getFile(name,{create:false},abortable(function(file){file.remove();save()}),abortable(function(ex){if(ex.code===ex.NOT_FOUND_ERR){save()}else{fs_error()}}))}),fs_error)}),fs_error)},FS_proto=FileSaver.prototype,saveAs=function(blob,name){return new FileSaver(blob,name)};FS_proto.abort=function(){var filesaver=this;filesaver.readyState=filesaver.DONE;dispatch(filesaver,"abort")};FS_proto.readyState=FS_proto.INIT=0;FS_proto.WRITING=1;FS_proto.DONE=2;FS_proto.error=FS_proto.onwritestart=FS_proto.onprogress=FS_proto.onwrite=FS_proto.onabort=FS_proto.onerror=FS_proto.onwriteend=null;view.addEventListener("unload",process_deletion_queue,false);saveAs.unload=function(){process_deletion_queue();view.removeEventListener("unload",process_deletion_queue,false)};return saveAs}(typeof self!=="undefined"&&self||typeof window!=="undefined"&&window||this.content));if(typeof module!=="undefined"&&module!==null){module.exports=saveAs}else if((typeof define!=="undefined"&&define!==null)&&(define.amd!=null)){define([],function(){return saveAs})}String.prototype.endsWithAny=function(){var strArray=Array.prototype.slice.call(arguments),$this=this.toLowerCase().toString();for(var i=0;i<strArray.length;i+=1){if($this.indexOf(strArray[i],$this.length-strArray[i].length)!==-1){return true}}return false};var saveTextAs=saveTextAs||(function(textContent,fileName,charset){fileName=fileName||'download.txt';charset=charset||'utf-8';textContent=(textContent||'').replace(/\r?\n/g,"\r\n");if(saveAs&&Blob){var blob=new Blob([textContent],{type:"text/plain;charset="+charset});saveAs(blob,fileName);return true}else{var saveTxtWindow=window.frames.saveTxtWindow;if(!saveTxtWindow){saveTxtWindow=document.createElement('iframe');saveTxtWindow.id='saveTxtWindow';saveTxtWindow.style.display='none';document.body.insertBefore(saveTxtWindow,null);saveTxtWindow=window.frames.saveTxtWindow;if(!saveTxtWindow){saveTxtWindow=window.open('','_temp','width=100,height=100');if(!saveTxtWindow){window.alert('Sorry, download file could not be created.');return false}}}var doc=saveTxtWindow.document;doc.open('text/html','replace');doc.charset=charset;if(fileName.endsWithAny('.htm','.html')){doc.close();doc.body.innerHTML='\r\n'+textContent+'\r\n'}else{if(!fileName.endsWithAny('.txt')){fileName+='.txt'}doc.write(textContent);doc.close()}var retValue=doc.execCommand('SaveAs',null,fileName);saveTxtWindow.close();return retValue}});
+
+    /*----*/
+    var area = document.getElementById('testArea');
+    var link = document.getElementById('testLink');
+
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        saveTextAs(area.value, 'index.html');
+    }, false);
+})();
+
+
+
+
+        window.onload = function() {
+  var d = document;
+  var q = "querySelector";
+  var iframe = d[q]("iframe");
+  // We target all textarea
+  var area = document.querySelectorAll('textarea');
+
+  // We bind on each textarea change event
+  for (var i = area.length - 1; i >= 0; i--) {
+    if (area[i].addEventListener) {
+      area[i].addEventListener('input', function() {
+        // event handling code for sane browsers
+        iframe.srcdoc = area[0].value + '<style>' +
+                area[1].value + '</style>' + '<script>' +
+                area[2].value + '<\/script>';
+      }, false);
+    } else if (area[i].attachEvent) {
+      area[i].attachEvent('onpropertychange', function() {
+        // IE-specific event handling code
+        iframe.srcdoc = area[0].value + '<style>' +
+                area[1].value + '</style>' + '<script>' +
+                area[2].value + '<\/script>';
+      });
+    }
+  }
+}
+window.onbeforeunload = function() {
+  return "Data will be lost if you leave the page, are you sure?";
+};
+
+
+ $(document).ready(function(){
+    $('.dropdown-toggle').dropdown()
+});
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>

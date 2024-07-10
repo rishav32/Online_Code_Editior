@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+body,html{
+  height: 100vh;
+    background: rgb(50,49,49);
+background: radial-gradient(circle, rgba(50,49,49,1) 0%, rgba(15,15,15,1) 100%);
+    scroll-behavior: smooth;
+}
+.heading{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    padding-top: 10px;
+}
+.color{
+    color: rgb(161, 165, 165);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.heading__1{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+.footer__config{
+    font-size: 13px;
+    padding: 7px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(196, 183, 183);
+  }
+  .footer__button{
+    padding-bottom: 3px;
+  }
+
+  .bn1 {
+    display: inline-block;
+    padding: 0.6em 1.7em;
+    border: 0.1em solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #181818;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  
+  .bn1:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: aliceblue;
+}
+
+
+a:hover{
+    color: rgb(255, 251, 0);
+}
+
+    /* Scrollbar styles */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+        border: 1px solid rgb(0, 0, 0);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+        background: rgb(0, 0, 0);  
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+        background: #000000;  
+        }
+  

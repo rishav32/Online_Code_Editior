@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body{
+  background: black;
+  height: 100vh;
+  font-size: 20px;
+  color: white;
+  font-family: 'Sulphur Point', sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+    /* Scrollbar styles */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+      border: 1px solid rgb(0, 0, 0);
+      }
+      
+      ::-webkit-scrollbar-thumb {
+      background: rgb(0, 0, 0);  
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+      background: #000000;  
+      }
+  
+
+
+.footer__config{
+  font-size: 13px;
+  padding: 7px;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(196, 183, 183);
+}
+.footer__button{
+  padding-bottom: 3px;
+}
+.heading__1{
+  font-size: 80px;
+  color: rgb(255, 217, 0);
+}
+.heading__2{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.heading__1 {
+  background: linear-gradient(
+    to right, 
+    hsl(98 100% 62%), 
+    hsl(204 100% 59%)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+
+.bn5 {
+  padding: 0.6em 2em;
+  font-family: 'Quicksand', sans-serif;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.bn5:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn5:active {
+  color: #000;
+}
+
+.bn5:active:after {
+  background: transparent;
+}
+
+.bn5:hover:before {
+  opacity: 1;
+}
+
+.bn5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.button__customize{
+  font-size: 1rem;
+}
+.support__btn{
+  padding-top: 5px;
+  padding-right: 3px;
+}
+
+
+html, body{
+	width:100%; 
+	height:100%; 
+	padding:0px; 
+	margin:0px;
+	overflow: hidden;
+	background: #191d1e; /* Old browsers */
+	background: -moz-linear-gradient(0deg,  #191d1e 50%, #283139 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#191d1e), color-stop(100%,#283139)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* IE10+ */
+	background: linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d1e', endColorstr='#283139',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background-attachment: fixed
+}
+
+a {
+  text-decoration: none !important;
+  color: rgb(229, 255, 0);
+}
+a:hover {
+  text-decoration: none !important;
+  color: rgb(229, 255, 0);
+}
+
+.a__foot{
+  text-decoration: none !important;
+  color: rgb(255, 255, 255);
+}
+
+a__foot:hover {
+  text-decoration: none !important;
+  color: rgb(255, 255, 255);
+}
